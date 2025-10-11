@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: board
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/board
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  threads:
+    virtual:
+      enabled: true

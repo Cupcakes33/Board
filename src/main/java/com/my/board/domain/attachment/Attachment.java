@@ -1,6 +1,7 @@
-package com.my.board.domain.user;
+package com.my.board.domain.attachment;
 
 import com.my.board.common.BaseEntity;
+import com.my.board.domain.post.Post;
 import jakarta.persistence.*;
 import lombok.*;
 

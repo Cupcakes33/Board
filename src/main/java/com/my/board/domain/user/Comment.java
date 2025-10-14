@@ -11,6 +11,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@ToString(exclude = {"post", "author"})
 public class Comment extends BaseEntity {
 
     @Id

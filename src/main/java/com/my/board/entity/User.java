@@ -1,4 +1,4 @@
-package com.my.board.domain.user;
+package com.my.board.entity;
 
 import com.my.board.common.BaseEntity;
 import jakarta.persistence.*;

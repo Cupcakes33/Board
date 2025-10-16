@@ -1,6 +1,6 @@
 package com.my.board.entity;
 
-import com.my.board.common.BaseEntity;
+import com.my.board.entity.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 

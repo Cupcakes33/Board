@@ -1,4 +1,4 @@
-package com.my.board.common;
+package com.my.board.entity.common;
 
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;

@@ -5,7 +5,13 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "attachments")
+@Table(
+    name = "attachments",
+    indexes = {
+        @Index(name = "idx_post_id", columnList = "post_id"),
+        @Index(name = "idx_stored_filename", columnList = "stored_filename")
+    }
+)
 @Getter
 @Setter
 @NoArgsConstructor

@@ -5,7 +5,14 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "comments")
+@Table(
+    name = "comments",
+    indexes = {
+        @Index(name = "idx_post_id", columnList = "post_id"),
+        @Index(name = "idx_author_id", columnList = "author_id"),
+        @Index(name = "idx_post_created", columnList = "post_id, created_at")
+    }
+)
 @Getter
 @Setter
 @NoArgsConstructor
